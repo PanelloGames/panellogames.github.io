@@ -18,7 +18,7 @@
 	];
 
 	const LINE_INTERVAL = 140;
-	const POST_PAUSE = 700;
+	const POST_PAUSE = 2000;
 	const SPLASH_DURATION = 4000;
 
 	let overlay = null;
