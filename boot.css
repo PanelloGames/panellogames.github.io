@@ -1,0 +1,110 @@
+.pb,
+.pb * {
+	cursor: inherit;
+}
+
+.pb {
+	position: fixed;
+	inset: 0;
+	z-index: 400;
+	display: none;
+	overflow: hidden;
+	background: #000;
+	color: #c8c8c8;
+	font-family: "Courier New", monospace;
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+.pb.open {
+	display: block;
+}
+
+body.booting .page,
+body.booting .taskbar,
+body.booting .desktop,
+body.booting .start-menu {
+	display: none;
+}
+
+.pb-post {
+	margin: 0;
+	padding: 8vh 8vw;
+	white-space: pre-wrap;
+}
+
+.pb-splash {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 26px;
+	text-align: center;
+	background: #000;
+}
+
+.pb-splash[hidden] {
+	display: none;
+}
+
+.pb-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.pb-mark {
+	width: auto;
+	height: 76px;
+	image-rendering: pixelated;
+}
+
+.pb-word {
+	font-family: Tahoma, "MS Sans Serif", sans-serif;
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.pb-edition {
+	font-family: Tahoma, "MS Sans Serif", sans-serif;
+	font-size: 14px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #c0c0c0;
+}
+
+.pb-progress {
+	width: 300px;
+	max-width: 70vw;
+	height: 20px;
+	padding: 2px;
+	background: #000;
+	border: 2px solid;
+	border-color: #808080 #fff #fff #808080;
+}
+
+.pb-progress-fill {
+	width: 0;
+	height: 100%;
+	background: #000080;
+	box-shadow: inset 0 3px 0 #1084d0;
+	animation: pb-load 3.6s steps(24) forwards;
+}
+
+@keyframes pb-load {
+	to {
+		width: 100%;
+	}
+}
+
+.pb-status {
+	margin: 0;
+	font-family: Tahoma, "MS Sans Serif", sans-serif;
+	font-size: 13px;
+	color: #c0c0c0;
+}

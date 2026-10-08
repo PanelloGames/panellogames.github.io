@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Panello Games</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="boot.css">
+</head>
+<body>
+
+	<div class="page">
+
+		<div class="title-bar">
+			<img class="title-icon" src="assets/daruma.png" alt="" aria-hidden="true">
+			<div class="title-bar-text">Panello Games :: my homepage</div>
+			<div class="title-bar-controls">
+				<button type="button" class="tb-btn tb-min" id="tb-min" aria-label="Minimize">_</button>
+				<button type="button" class="tb-btn tb-max" id="tb-max" aria-label="Maximize">&#9633;</button>
+				<button type="button" class="tb-btn tb-close" id="tb-close" aria-label="Close">&#10005;</button>
+			</div>
+		</div>
+
+		<nav class="menu-bar">
+			<div class="menu">
+				<button type="button" class="menu-btn"><u>F</u>ile</button>
+				<div class="menu-drop">
+					<button type="button" class="menu-item" data-action="print">Print&hellip;</button>
+					<button type="button" class="menu-item" data-action="copy-link">Copy page link</button>
+				</div>
+			</div>
+			<div class="menu">
+				<button type="button" class="menu-btn"><u>E</u>dit</button>
+				<div class="menu-drop">
+					<button type="button" class="menu-item" data-action="copy-email">Copy contact email</button>
+				</div>
+			</div>
+			<div class="menu">
+				<button type="button" class="menu-btn"><u>V</u>iew</button>
+				<div class="menu-drop">
+					<a class="menu-item" href="#sushiamo">Sushiamo</a>
+					<a class="menu-item" href="#impasto">Impasto</a>
+					<a class="menu-item" href="#contact">Contact</a>
+					<a class="menu-item" href="#web">Find me on the web</a>
+				</div>
+			</div>
+			<div class="menu">
+				<button type="button" class="menu-btn"><u>H</u>elp</button>
+				<div class="menu-drop">
+					<a class="menu-item" href="https://panellogames.eo.page/ilikethis" target="_blank" rel="noopener">Join the newsletter</a>
+					<a class="menu-item" href="https://discord.gg/rvN9GW2F8T" target="_blank" rel="noopener">Join the Discord</a>
+					<a class="menu-item" href="https://store.steampowered.com/app/4555040/Sushiamo/" target="_blank" rel="noopener">Wishlist Sushiamo on Steam</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="window-body">
+
+			<header class="banner">
+				<div class="counter">
+					You are visitor<br>
+					<span id="visitor-counter">0000000</span>
+				</div>
+
+				<h1 class="site-title">Panello Games</h1>
+
+				<div class="marquee">
+					<marquee scrollamount="6" behavior="scroll" direction="left">
+						*** SUSHIAMO DEMO OUT NOW *** &nbsp;*** SUSHIAMO RELEASES 4 NOVEMBER 2026 *** &nbsp;*** WISHLIST SUSHIAMO ON STEAM ***
+					</marquee>
+				</div>
+			</header>
+
+			<div class="newsletter-bar">
+				<p class="tiny">get updates on my project and games!</p>
+
+				<a class="btn btn-big" href="https://panellogames.eo.page/ilikethis" target="_blank" rel="noopener">
+					<img class="btn-icon" src="assets/newsletter.gif" alt=""> JOIN MY NEWSLETTER!
+				</a>
+			</div>
+
+			<section class="section" id="sushiamo">
+				<h2 class="section-title">Sushiamo</h2>
+
+				<p class="center">
+					<img class="title-gif" src="assets/sushiamo.gif" alt="" width="496" height="40">
+				</p>
+
+				<p class="tagline">
+					Sushiamo is a roguelike deck-builder where you make sushi to reach absurd scores.<br>
+					Discover unique ingredients, sauces, game-changing tools, and navigate the map
+					to break the game with insane combos!
+				</p>
+
+				<p class="center">
+					<a href="https://store.steampowered.com/app/4555040/Sushiamo/" target="_blank" rel="noopener">
+						<img class="capsule" src="assets/capsule.png" alt="Sushiamo on Steam">
+					</a>
+				</p>
+
+				<p class="blink center">*** DEMO OUT NOW ***</p>
+
+				<div class="countdown-box">
+					<div class="countdown-label">FULL GAME RELEASES IN:</div>
+					<div class="countdown">
+						<span class="cd-cell"><b id="cd-days">--</b><i>days</i></span>
+						<span class="cd-sep">:</span>
+						<span class="cd-cell"><b id="cd-hours">--</b><i>hours</i></span>
+						<span class="cd-sep">:</span>
+						<span class="cd-cell"><b id="cd-mins">--</b><i>mins</i></span>
+						<span class="cd-sep">:</span>
+						<span class="cd-cell"><b id="cd-secs">--</b><i>secs</i></span>
+					</div>
+					<div class="countdown-date">4 November 2026</div>
+				</div>
+
+				<p class="center">
+					<a class="btn btn-steam" href="https://store.steampowered.com/app/4555040/Sushiamo/" target="_blank" rel="noopener">WISHLIST ON STEAM</a>
+				</p>
+
+				<p class="center social social-big">
+					<a href="https://discord.gg/rvN9GW2F8T" target="_blank" rel="noopener">
+						<img src="assets/discord.gif" alt="Join the Discord" width="88" height="31">
+					</a>
+					<a href="https://www.reddit.com/r/Sushiamo/" target="_blank" rel="noopener">
+						<img src="assets/reddit.gif" alt="r/Sushiamo" width="88" height="31">
+					</a>
+					<a href="https://store.steampowered.com/app/4555040/Sushiamo/" target="_blank" rel="noopener">
+						<img src="assets/steam.gif" alt="Play with Steam" width="88" height="31">
+					</a>
+				</p>
+
+				<p class="center">
+					<a class="btn btn-small" href="https://drive.google.com/drive/folders/1q73l95lD96pEUqdEPhuFAEqS65TcN0eh" target="_blank" rel="noopener">PRESS KIT (Google Drive)</a>
+				</p>
+			</section>
+
+			<section class="section impasto" id="impasto">
+				<h2 class="section-title">Impasto</h2>
+				<img class="impasto-side" src="assets/impasto.gif" alt="" width="96" height="67">
+				<p class="wip-badge">*** Work in progress title ***</p>
+
+				<p class="tagline">
+					A cozy and relaxing game about restoring paintings
+				</p>
+
+				<p class="center">
+					<video class="impasto-video" autoplay muted loop playsinline>
+						<source src="assets/impasto.mp4" type="video/mp4">
+					</video>
+				</p>
+
+				<p class="center washi">WASHI KOZO 👁️👄👁️</p>
+
+				<!-- TODO: put the real steam page when live -->
+				<p class="center">
+					No Steam page yet, but you can be the first to know:
+				</p>
+				<p class="center">
+					<a class="btn btn-big" href="https://panellogames.eo.page/ilikethis" target="_blank" rel="noopener"><img class="btn-icon" src="assets/newsletter.gif" alt=""> SIGN UP FOR THE NEWSLETTER</a>
+				</p>
+			</section>
+
+			<section class="section" id="contact">
+				<h2 class="section-title">Contact</h2>
+				<p class="tagline">
+					<img class="press-icon" src="assets/email.gif" alt="">For press inquiries contact me at:
+				</p>
+				<p class="center">
+					<span class="copy-email" data-email="sushiamo.game@gmail.com" role="button" tabindex="0" title="Click to copy">sushiamo.game@gmail.com</span>
+				</p>
+				<p class="tiny center copy-status" aria-live="polite">click to copy</p>
+			</section>
+
+			<section class="section" id="web">
+				<h2 class="section-title">Find me on the web</h2>
+				<p class="center social">
+					<a href="https://www.youtube.com/@PanelloGames" target="_blank" rel="noopener">
+						<img src="assets/youtube.gif" alt="YouTube" width="88" height="31"><br>YouTube
+					</a>
+					<a href="https://www.instagram.com/panellogames/reels/" target="_blank" rel="noopener">
+						<img src="assets/instagram.gif" alt="Instagram" width="88" height="31"><br>Instagram
+					</a>
+				</p>
+			</section>
+
+			<footer class="footer">
+				<p class="badges">
+					<img src="assets/notepad.gif" alt="Built with Notepad" width="88" height="31">
+					<img src="assets/adobe.gif" alt="Get Adobe Flash 4" width="88" height="31">
+					<img src="assets/8bit.gif" alt="8-bit" width="88" height="31">
+				</p>
+				<p>&copy; 2026 Panello Games</p>
+				<p class="tiny">Best viewed in Netscape Navigator 4.0 at 800x600</p>
+				<p class="tiny">&#127757; Please consider the planet before printing this website. &#127757;</p>
+			</footer>
+
+		</div>
+	</div>
+
+	<div class="taskbar">
+		<button class="start-btn" id="start-btn" type="button">
+			<span class="win-flag" aria-hidden="true"></span>Start
+		</button>
+		<button class="task-btn" id="task-btn" type="button"><img class="task-icon" src="assets/daruma.png" alt="" aria-hidden="true">Panello Games :: my homepage</button>
+		<div class="taskbar-clock" id="taskbar-clock">--:--</div>
+	</div>
+
+	<div class="start-menu" id="start-menu">
+		<div class="start-menu-side" aria-hidden="true"><span>Panello&nbsp;Games</span></div>
+		<ul class="start-menu-list">
+			<li><a href="https://panellogames.eo.page/ilikethis" target="_blank" rel="noopener">Join the newsletter</a></li>
+			<li><a href="https://store.steampowered.com/app/4555040/Sushiamo/" target="_blank" rel="noopener">Wishlist Sushiamo on Steam</a></li>
+			<li class="sep" aria-hidden="true"></li>
+			<li><a href="#" id="shutdown-item">Shut Down&hellip;</a></li>
+		</ul>
+	</div>
+
+	<div class="desktop" id="desktop">
+		<div class="desk-shortcut" id="reopen-shortcut" role="button" tabindex="0" title="Reopen Panello Games">
+			<img class="desk-icon" src="assets/daruma.png" alt="" aria-hidden="true">
+			<span class="desk-label">Panello Games</span>
+		</div>
+	</div>
+
+	<div class="dialog-overlay" id="dialog">
+		<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+			<div class="dialog-title-bar">
+				<span class="dialog-title" id="dialog-title">Panello Games</span>
+				<button type="button" class="tb-btn tb-close" id="dialog-close" aria-label="Cancel">&#10005;</button>
+			</div>
+			<div class="dialog-body">
+				<span class="dialog-icon" aria-hidden="true">?</span>
+				<p class="dialog-message" id="dialog-message">Are you sure you want to close Panello Games?</p>
+			</div>
+			<div class="dialog-buttons">
+				<button type="button" class="btn dialog-yes" id="dialog-yes">Yes</button>
+				<button type="button" class="btn dialog-no" id="dialog-no">No</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="bsod" id="bsod" role="alertdialog" aria-label="System error">
+		<p class="bsod-title">Panello Games</p>
+		<p>A fatal exception 0E has occurred at 0028:C0011E36 in VXD SUSHIAMO(01) + 00010E36. The current application will be terminated.</p>
+		<p>*&nbsp; Press any key to terminate the current application.<br>
+		*&nbsp; Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.</p>
+		<p>Press any key to continue <span class="bsod-cursor">_</span></p>
+	</div>
+
+	<script src="boot.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
