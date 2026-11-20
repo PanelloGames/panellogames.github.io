@@ -557,15 +557,17 @@ button:focus-visible,
 
 .btn-steam {
 	color: var(--white);
-	background: #2a475e;
-	font-size: 15px;
-	padding: 8px 24px;
-	min-width: 120px;
+	background: #4c6b22;
+	font-size: 20px;
+	padding: 14px 44px;
+	min-width: 280px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 0 #23310d;
 	box-shadow:
-		inset -1px -1px #101820,
-		inset 1px 1px #66c0f4,
-		inset -2px -2px #1b2838,
-		inset 2px 2px #3d6a8f,
+		inset -1px -1px #23310d,
+		inset 1px 1px #a4d007,
+		inset -2px -2px #2c3f10,
+		inset 2px 2px #86b52b,
 		0 0 0 1px var(--text);
 }
 
@@ -574,16 +576,16 @@ button:focus-visible,
 }
 
 .btn-steam:hover {
-	background: #35597a;
+	background: #5c8229;
 }
 
 .btn-steam:active {
-	background: #1b2838;
+	background: #3d561b;
 	box-shadow:
-		inset -1px -1px #66c0f4,
-		inset 1px 1px #101820,
-		inset -2px -2px #3d6a8f,
-		inset 2px 2px #1b2838,
+		inset -1px -1px #a4d007,
+		inset 1px 1px #23310d,
+		inset -2px -2px #86b52b,
+		inset 2px 2px #2c3f10,
 		0 0 0 1px var(--text);
 }
 
@@ -627,41 +629,6 @@ button:focus-visible,
 	font-weight: bold;
 	font-size: 12px;
 	letter-spacing: 2px;
-}
-
-.countdown {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 4px;
-}
-
-.cd-cell {
-	display: inline-block;
-	min-width: 56px;
-	color: var(--text);
-	font-family: "Courier New", monospace;
-}
-
-.cd-cell b {
-	display: block;
-	font-size: 28px;
-	line-height: 1;
-}
-
-.cd-cell i {
-	display: block;
-	margin-top: 3px;
-	font-size: 10px;
-	font-style: normal;
-	text-transform: uppercase;
-	color: var(--muted);
-}
-
-.cd-sep {
-	color: var(--text);
-	font-size: 24px;
-	font-weight: bold;
 }
 
 .countdown-date {
@@ -1147,9 +1114,6 @@ body.closed .desktop {
 		margin: 0 auto 8px;
 	}
 
-	.cd-cell { min-width: 42px; }
-	.cd-cell b { font-size: 22px; }
-
 	.task-btn { flex-basis: 120px; }
 }
 
@@ -1178,7 +1142,6 @@ h1,
 h2,
 h3,
 .counter,
-.countdown,
 .bsod p {
 	cursor: url("assets/cursors/text.png") 15 16, text;
 }

@@ -1,39 +1,5 @@
-const RELEASE_DATE = new Date(2026, 10, 4, 0, 0, 0);
-
-const cdDays = document.getElementById("cd-days");
-const cdHours = document.getElementById("cd-hours");
-const cdMins = document.getElementById("cd-mins");
-const cdSecs = document.getElementById("cd-secs");
-
-let countdownTimer = null;
-
 function pad2(n) {
 	return String(n).padStart(2, "0");
-}
-
-function updateCountdown() {
-	const diff = RELEASE_DATE - new Date();
-
-	if (diff <= 0) {
-		cdDays.textContent = "00";
-		cdHours.textContent = "00";
-		cdMins.textContent = "00";
-		cdSecs.textContent = "00";
-		document.querySelector(".countdown-label").textContent = "SUSHIAMO IS OUT NOW!";
-		clearInterval(countdownTimer);
-		return;
-	}
-
-	const totalSeconds = Math.floor(diff / 1000);
-	cdDays.textContent = pad2(Math.floor(totalSeconds / 86400));
-	cdHours.textContent = pad2(Math.floor((totalSeconds % 86400) / 3600));
-	cdMins.textContent = pad2(Math.floor((totalSeconds % 3600) / 60));
-	cdSecs.textContent = pad2(totalSeconds % 60);
-}
-
-if (cdDays) {
-	updateCountdown();
-	countdownTimer = setInterval(updateCountdown, 1000);
 }
 
 const counterEl = document.getElementById("visitor-counter");
